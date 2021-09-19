@@ -600,10 +600,10 @@ namespace EZBlocker2
                                     ShowMessage((checkBoxMuteAds.Checked ? "Muting" : "Playing") + ": Ads");
                             }
                             else
-                                ShowMessage("Spotify is in pause");
+                                ShowMessage("Spotify is paused");
                         }
                         else
-                            ShowMessage("Spotify is in private session", "Disable private session to allow " + Program.ProductName + " to work");
+                            ShowMessage("Spotify is in a private session", "Incorrect account? Disable private session to allow " + Program.ProductName + " to work");
                     }
                     else
                         ShowMessage("Error: " + Spotify.WebAPI.Status.Error.Message, "Error: " + Spotify.WebAPI.Status.Error.Message);
